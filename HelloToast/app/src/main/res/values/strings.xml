@@ -2,4 +2,6 @@
     <string name="app_name">Waterfalls</string>
     <string name="counter">Count</string>
     <string name="counter_init_value">0</string>
+    <string name="waterfall_message">What a beautiful waterfall!</string>
+    <string name="reset">Reset</string>
 </resources>
