@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_waterfall"
+        android:layout_width="638dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="showWaterfalls"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="639dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:onClick="countUp"
+        android:text="@string/counter"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_waterfall"
+        app:layout_constraintStart_toEndOf="@+id/button_waterfall" />
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#BDEAF1"
+        android:gravity="center_vertical"
+        android:text="@string/counter_init_value"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="200sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset_counter" />
+
+    <Button
+        android:id="@+id/reset_counter"
+        android:layout_width="1278dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:onClick="reset"
+        android:text="@string/reset"
+        app:layout_constraintTop_toBottomOf="@+id/button_count"
+        tools:layout_editor_absoluteX="1dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
