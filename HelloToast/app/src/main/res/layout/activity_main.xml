@@ -38,15 +38,17 @@
         android:layout_height="0dp"
         android:background="#BDEAF1"
         android:gravity="center_vertical"
-        android:textAlignment="center"
         android:text="@string/counter_init_value"
+        android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="160sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/button_count"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_waterfall" />
+        app:layout_constraintTop_toBottomOf="@+id/button_waterfall"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/reset_counter"
@@ -59,4 +61,13 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_count" />
+
+    <Switch
+        android:id="@+id/avalanche"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/avalanche"
+        android:onClick="avalanche"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/show_count" />
 </androidx.constraintlayout.widget.ConstraintLayout>

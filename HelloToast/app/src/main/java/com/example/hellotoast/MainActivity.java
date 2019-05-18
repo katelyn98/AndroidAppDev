@@ -2,7 +2,9 @@ package com.example.hellotoast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Display;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,8 +28,10 @@ public class MainActivity extends AppCompatActivity {
         waterfalls.show();
     }
 
+    //Called when the user taps count
     public void countUp(View view) {
 
+        //increases the count on the screen
         mCount++;
         if(mShowCount != null){
             mShowCount.setText(Integer.toString(mCount));
@@ -35,9 +39,17 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //Called when the user taps the reset button
     public void reset(View view){
+        //reset the count variable to 0 when reset is tapped
         mShowCount.setText((Integer.toString(reset_value)));
         mCount = 0;
 
+    }
+
+    //Called when the user taps the avalanche button
+    public void avalanche(View view) {
+        Intent intent = new Intent(this, ScrollingPractice.class);
+        startActivity(intent);
     }
 }
