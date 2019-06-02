@@ -1,14 +1,14 @@
-package com.katelyncmorrison.tracksinthewild.ui.send;
+package com.katelyncmorrison.tracksinthewild.ui.places;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SendViewModel extends ViewModel {
+public class PlacesViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public SendViewModel() {
+    public PlacesViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is send fragment");
     }

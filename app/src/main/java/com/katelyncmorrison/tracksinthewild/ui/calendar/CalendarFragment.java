@@ -1,4 +1,4 @@
-package com.katelyncmorrison.tracksinthewild.ui.tools;
+package com.katelyncmorrison.tracksinthewild.ui.calendar;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.katelyncmorrison.tracksinthewild.R;
 
-public class ToolsFragment extends Fragment {
+public class CalendarFragment extends Fragment {
 
-    private ToolsViewModel toolsViewModel;
+    private CalendarViewModel calendarViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        toolsViewModel =
-                ViewModelProviders.of(this).get(ToolsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_tools, container, false);
+        calendarViewModel =
+                ViewModelProviders.of(this).get(CalendarViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_calendar, container, false);
         final TextView textView = root.findViewById(R.id.text_tools);
-        toolsViewModel.getText().observe(this, new Observer<String>() {
+        calendarViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

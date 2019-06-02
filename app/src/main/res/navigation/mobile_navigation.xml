@@ -18,26 +18,26 @@
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.katelyncmorrison.tracksinthewild.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_map"
+        android:name="com.katelyncmorrison.tracksinthewild.ui.map.MapFragment"
+        android:label="@string/menu_map"
+        tools:layout="@layout/fragment_map" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.katelyncmorrison.tracksinthewild.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        android:id="@+id/nav_calendar"
+        android:name="com.katelyncmorrison.tracksinthewild.ui.calendar.CalendarFragment"
+        android:label="@string/menu_calendar"
+        tools:layout="@layout/fragment_calendar" />
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.katelyncmorrison.tracksinthewild.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        android:id="@+id/nav_gear"
+        android:name="com.katelyncmorrison.tracksinthewild.ui.gear.GearFragment"
+        android:label="@string/menu_gear"
+        tools:layout="@layout/fragment_gear" />
 
     <fragment
-        android:id="@+id/nav_send"
-        android:name="com.katelyncmorrison.tracksinthewild.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        android:id="@+id/nav_places"
+        android:name="com.katelyncmorrison.tracksinthewild.ui.places.PlacesFragment"
+        android:label="@string/menu_places"
+        tools:layout="@layout/fragment_places" />
 </navigation>
