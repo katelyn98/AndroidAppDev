@@ -14,5 +14,6 @@
     <string name="menu_gear">Gear</string>
     <string name="menu_places">Places</string>
     <string name="wishes">Wishes</string>
+    <string name="title_activity_my_places">Past Tracks</string>
 
 </resources>
